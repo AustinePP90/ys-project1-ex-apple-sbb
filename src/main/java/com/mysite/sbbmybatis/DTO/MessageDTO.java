@@ -2,7 +2,8 @@ package com.mysite.sbbmybatis.DTO;
 
 public class MessageDTO {
 	private int id;
-	private String message;
+	private String name;
+	private String author;
 	
 	public int getId() {
 		return id;
@@ -12,11 +13,23 @@ public class MessageDTO {
 		this.id = id;
 	}
 	
-	public String getMessage() {
-		return message;
+	public String getName() {
+		return name;
 	}
 	
-	public void setMessage(String message) {
-		this.message = message;
+	public void setName(String name) {
+		this.name = name;
 	}
+	
+	public String getAuthor() {
+		return author;
+	}
+	
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+	
+
 }
+	
+
