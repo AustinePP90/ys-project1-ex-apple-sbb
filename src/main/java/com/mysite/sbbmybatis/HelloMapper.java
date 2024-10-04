@@ -10,6 +10,8 @@ import com.mysite.sbbmybatis.DTO.MessageDTO;
 public interface HelloMapper {
 	MessageDTO getBook(int id);
 	
+	List<MessageDTO> getBookList();	
+	
 	void insertInfo(MessageDTO data);
 	
 }

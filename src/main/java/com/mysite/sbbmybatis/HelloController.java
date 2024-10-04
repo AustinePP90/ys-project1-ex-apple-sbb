@@ -25,13 +25,19 @@ public class HelloController {
 		return "Hello World ^^";
 	}
 	
-	@GetMapping("{id}")
+	@GetMapping("/{id}")
 	@ResponseBody
 	public MessageDTO getBook(@PathVariable("id") int id) {
 		return service.getBook(id);
 	}
 	
-	@GetMapping("/info")
+	@GetMapping("/list")
+	@ResponseBody
+	public List<MessageDTO> getBookList() {
+		return service.getBookList();
+	}
+	
+	@GetMapping("/insert")
 	public String typeInfo() {
 		return "info";
 	}

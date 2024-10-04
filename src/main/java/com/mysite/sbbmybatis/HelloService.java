@@ -16,6 +16,10 @@ public class HelloService {
 		return mapper.getBook(id);
 	}
 	
+	public List<MessageDTO> getBookList() {
+		return mapper.getBookList();
+	}
+	
 	public void insertInfo(MessageDTO data) {
 		mapper.insertInfo(data);
 	}
