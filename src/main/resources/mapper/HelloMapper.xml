@@ -3,5 +3,8 @@
 <mapper namespace="com.mysite.sbbmybatis.HelloMapper">
 	<select id="getBook" resultType="com.mysite.sbbmybatis.DTO.MessageDTO">
 		SELECT * FROM book WHERE id = #{id} 
-	</select>  
+	</select>
+	<insert id="insertInfo" parameterType="com.mysite.sbbmybatis.DTO.MessageDTO">
+		INSERT INTO book (name, author) values (#{name}, #{author})
+	</insert>
 </mapper>

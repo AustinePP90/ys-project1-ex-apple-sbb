@@ -4,7 +4,7 @@ public class MessageDTO {
 	private int id;
 	private String name;
 	private String author;
-	
+
 	public int getId() {
 		return id;
 	}
