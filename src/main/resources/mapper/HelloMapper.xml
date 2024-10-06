@@ -7,4 +7,7 @@
 	<insert id="insertInfo" parameterType="com.mysite.sbbmybatis.DTO.MessageDTO">
 		INSERT INTO book (name, author) values (#{name}, #{author})
 	</insert>
+	<select id="getBookList" resultType="com.mysite.sbbmybatis.DTO.MessageDTO">
+		SELECT id, NAME, author FROM book ORDER BY id DESC LIMIT 5 
+	</select>
 </mapper>
