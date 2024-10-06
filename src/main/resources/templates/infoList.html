@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InfoList</title>
+<script th:src="@{/js/utils.js}"></script>
+</head>
+<body>
+<!-- 비어 있는 message div -->
+<h1>Book List</h1>
+<div id="loading_id" class="loading">Loading... ... ...</div>
+<div id="error_id" class="error">fetching 과정에서 오류가 발생했습니다... ... ...</div>
+<ul id="bookList_id"></ul>
+
+<!-- 자바스크립트로 fetch를 이용해 /message/list 결과를 위 div에 담는다. -->
+<script th:src="@{/js/fetch-infoList.js}"></script>
+</body>
+</html>

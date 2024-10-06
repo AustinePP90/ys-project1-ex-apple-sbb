@@ -20,9 +20,8 @@ public class HelloController {
 	private HelloService service;
 	
 	@GetMapping
-	@ResponseBody
 	public String printMessage() {
-		return "Hello World ^^";
+		return "infoList";
 	}
 	
 	@GetMapping("/{id}")
